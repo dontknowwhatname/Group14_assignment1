@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Services Introduction</title>
+    <link rel="stylesheet" href="reservation.css">
+    <script src="reservation.js" defer></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo" />
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="reservation.html">In-Store Services</a></li>
+            <li><a href="news.html">In-Store News</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Our Services</h1>
+
+        <div class="button-container">
+            <button onclick="scrollToSection('beauty')">Grooming</button>
+            <button onclick="scrollToSection('boarding')">Boarding</button>
+            <button onclick="scrollToSection('walking')">Dog Walking</button>
+            <button onclick="scrollToSection('training')">Training</button>
+        </div>
+        <button onclick="openModal()">Book a Service</button>
+    </header>
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="7.jpg" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="8.png" alt="Image 2">
+                </div>
+            </div>
+            <button class="carousel-control prev" onclick="prevSlide()"></button>
+            <button class="carousel-control next" onclick="nextSlide()"></button>
+        </div>
+        <div class="brand-culture">
+            <div class="brand-text">
+                <h2>Brand Culture</h2>
+                <p>We are committed to providing the highest quality services for every dog, focusing on their health and happiness. Our mission is to create a warm and safe environment where every dog can grow up happily.</p>
+                <h3>Our Values</h3>
+                <ul>
+                    <li><strong>Care:</strong> Treat every dog with love and patience.</li>
+                    <li><strong>Professionalism:</strong> Provide a trained professional team to ensure service quality.</li>
+                    <li><strong>Integrity:</strong> Communicate with clients transparently and honestly.</li>
+                    <li><strong>Innovation:</strong> Continuously explore and introduce the latest pet care technologies and products.</li>
+                </ul>
+                <h3>Our Commitment</h3>
+                <p>We promise to provide a safe and comfortable environment and ensure the satisfaction of every client and pet. Our team is always ready to listen to your needs and provide personalized services.</p>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section id="beauty" class="service-section">
+            <div class="image-content">
+                <img src="cc.jpg" alt="Dog Grooming" />
+            </div>
+            <div class="text-content">
+                <h2>Grooming Service Overview</h2>
+                <p>Our dog grooming services aim to provide professional care for your beloved dog, making them feel refreshed both physically and mentally. We believe that good grooming is not just for aesthetics but also an important aspect of promoting health and happiness.</p>
+                <h3>Service Details:</h3>
+                <ul>
+                    <li><strong>Bathing and Drying:</strong> Using high-quality, gentle pet care products for deep cleaning, followed by professional drying equipment.</li>
+                    <li><strong>Hair Trimming:</strong> Customized hair trimming services based on the dog's breed and owner preferences.</li>
+                    <li><strong>Nail Trimming and Care:</strong> Regular nail trimming to ensure the dog's safety and health.</li>
+                    <li><strong>Ear Cleaning:</strong> Cleaning the dog's ear canal to prevent infections.</li>
+                    <li><strong>Skin Care:</strong> Using non-irritating, natural ingredient products to soothe and moisturize the dog's skin.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="boarding" class="service-section">
+            <div class="image-content">
+                <img src="bb.jpg" alt="Dog Boarding" />
+            </div>
+            <div class="text-content">
+                <h2>Boarding Service Overview</h2>
+                <p>Our pet boarding services provide your dog with a safe and comfortable temporary home, so you don't have to worry about their care while you're away. We have a professional care team and a comfortable boarding environment to ensure your pet receives the best care while you are not around.</p>
+                <h3>Service Details:</h3>
+                <ul>
+                    <li><strong>24/7 Supervision:</strong> Our team provides round-the-clock supervision to ensure each pet receives ample attention and care during their stay.</li>
+                    <li><strong>Comfortable Accommodation:</strong> We provide spacious, clean accommodation equipped with comfortable bedding and toys, making pets feel at home.</li>
+                    <li><strong>Regular Feeding and Water:</strong> We provide scheduled, portion-controlled feeding based on each pet's dietary habits to meet their nutritional needs.</li>
+                    <li><strong>Daily Activities and Games:</strong> We regularly organize activities and games to help pets expend excess energy and maintain good physical and mental health.</li>
+                    <li><strong>Health Monitoring:</strong> We regularly monitor the pets' health, and if any abnormalities are observed, we will promptly contact the owners and take appropriate measures.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="walking" class="service-section">
+            <div class="image-content">
+                <img src="oo.jpg" alt="Dog Walking" />
+            </div>
+            <div class="text-content">
+                <h2>Dog Walking Service Overview</h2>
+                <p>Our dog walking services provide professional companionship and exercise for your dog, allowing them to enjoy walks in fresh air. Our experienced dog walkers ensure that your pet receives ample love and care during their walks.</p>
+                <h3>Service Details:</h3>
+                <ul>
+                    <li><strong>Customized Walking Routes:</strong> We design suitable walking routes based on your dog's habits and needs, ensuring they can explore different environments.</li>
+                    <li><strong>Social Interaction:</strong> We arrange interactions with other dogs during walks to help enhance your pet's social skills.</li>
+                    <li><strong>Safety Supervision:</strong> Our dog walkers focus on the dog's safety throughout the walk, ensuring they are away from potential dangers.</li>
+                    <li><strong>Health Monitoring:</strong> We observe the dog's health, and if any abnormalities are found, we will promptly contact the owners.</li>
+                    <li><strong>Basic Training:</strong> We also conduct basic obedience training during walks to help dogs develop good behavior habits.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="training" class="service-section">
+            <div class="image-content">
+                <img src="kk.jpg" alt="Dog Training and Play" />
+            </div>
+            <div class="text-content">
+                <h2>Dog Training and Play Service Overview</h2>
+                <p>Our dog training and play services aim to enhance your dog's skills and social abilities through fun activities and professional guidance. Our experienced trainers create personalized training plans based on each dog's personality and needs.</p>
+                <h3>Service Details:</h3>
+                <ul>
+                    <li><strong>Basic Obedience Training:</strong> Teach dogs basic commands such as sit, lie down, and come, fostering good behavior habits.</li>
+                    <li><strong>Fun Interactive Games:</strong> Increase dogs' intelligence and agility through various games, making the training process more enjoyable.</li>
+                    <li><strong>Socialization Training:</strong> Allow dogs to interact with other pets in group activities to enhance their social skills.</li>
+                    <li><strong>Emotional Management:</strong> Use professional training techniques to help dogs overcome anxiety and fear, building their confidence.</li>
+                    <li><strong>Personalized Guidance:</strong> Provide one-on-one training advice and techniques based on each dog's situation to maximize training effectiveness.</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 Love Pet. All rights reserved.</p>
+        <p>Contact Information: <strong><a href="tel:4009998888">400-999-8888</a></strong></p>
+        <p>Email: <a href="mailto:partnership@cute-pets.com">partnership@cute-pets.com</a></p>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+<div id="appointmentModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Book a Service</h2>
+        <form id="appointmentForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="service">Select Service:</label>
+            <select id="service" name="service" required>
+                <option value="Grooming">Grooming</option>
+                <option value="Boarding">Boarding</option>
+                <option value="Walking">Walking</option>
+                <option value="Training">Training</option>
+            </select>
+
+            <label for="date">Appointment Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Appointment Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <input type="submit" value="Submit Appointment" onclick="showSuccessModal(); return false;">
+        </form>
+    </div>
+</div>
+
+<!-- Appointment Success Modal -->
+<div id="successModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeSuccessModal()">&times;</span>
+        <h2>Appointment Successful!</h2>
+        <p>Thank you for your appointment. We will contact you as soon as possible.</p>
+        <button onclick="closeSuccessModal(); closeModal()">Close</button>
+    </div>
+</div>
+
+</html>

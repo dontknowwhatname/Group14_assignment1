@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Information</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="contact.js" defer></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo" />
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="reservation.html">In-Store Services</a></li>
+            <li><a href="news.html">In-Store News</a></li>
+            <li><a href="#contact" onclick="scrollToSection('contact')">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="additional-images">
+        <img src="20.jpg" alt="Image 4">
+    </div>
+    <main>
+        <aside class="sidebar">
+            <h2>Job Positions</h2>
+            <button onclick="showJob('groomer')">Pet Groomer</button>
+            <button onclick="showJob('caregiver')">Pet Caregiver</button>
+            <button onclick="showJob('trainer')">Pet Trainer</button>
+        </aside>
+
+        <div id="job-details" class="job-details">
+            <div id="groomer" class="job-info" style="display: block;">
+                <h2>Hiring Pet Groomer</h2>
+                <h3>Job Requirements:</h3>
+                <ul>
+                    <li>Love pets and have knowledge of pet grooming.</li>
+                    <li>Possess relevant certificates and at least two years of grooming experience.</li>
+                    <li>Good communication skills and teamwork spirit.</li>
+                    <li>Capable of independently performing bathing, hair cutting, nail trimming, etc.</li>
+                    <li>Patience and affection for animals, able to handle various breeds.</li>
+                </ul>
+                <h3>Salary:</h3>
+                <p>Monthly Salary: ¥8000 - ¥12000 (based on experience and skills)</p>
+            </div>
+
+            <div id="trainer" class="job-info">
+                <h2>Hiring Pet Trainer</h2>
+                <h3>Job Requirements:</h3>
+                <ul>
+                    <li>Passionate about animals, with professional pet training knowledge.</li>
+                    <li>At least three years of pet training experience; certification preferred.</li>
+                    <li>Able to observe animal behavior and create personalized training plans.</li>
+                    <li>Excellent communication skills to effectively communicate with pet owners.</li>
+                    <li>Teamwork spirit, able to coordinate work with other staff members.</li>
+                </ul>
+                <h3>Salary:</h3>
+                <p>Monthly Salary: ¥10000 - ¥15000 (based on experience and skills)</p>
+            </div>
+
+            <div id="caregiver" class="job-info">
+                <h2>Hiring Pet Caregiver</h2>
+                <h3>Job Requirements:</h3>
+                <ul>
+                    <li>Passionate and patient with animals, able to provide basic care.</li>
+                    <li>Experience in caregiving preferred; pet care certification is a plus.</li>
+                    <li>Responsible for daily feeding, hygiene, and health monitoring.</li>
+                    <li>Good communication skills to build trust with pet owners.</li>
+                    <li>Able to adapt to a fast-paced work environment with flexible hours.</li>
+                </ul>
+                <h3>Salary:</h3>
+                <p>Monthly Salary: ¥6000 - ¥9000 (based on experience and skills)</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <p><strong>Address:</strong> 88 Hanwei International Plaza, Fengtai District, Beijing, 5th Floor</p>
+        <p><strong>Business Cooperation:</strong><a
+                href="mailto:partnership@cute-pets.com">partnership@cute-pets.com</a></p>
+        <p><strong>Product Cooperation:</strong><a href="mailto:products@cute-pets.com">products@cute-pets.com</a></p>
+        <p><strong>Customer Service Hotline:</strong><a href="tel:4009998888">400-999-8888</a></p>
+        <p><strong>Job Information:</strong><a href="mailto:careers@cute-pets.com">careers@cute-pets.com</a></p>
+    </footer>
+
+    <script>
+        function showJob(job) {
+            const jobInfos = document.querySelectorAll('.job-info');
+            jobInfos.forEach(info => {
+                info.style.display = 'none';
+            });
+            document.getElementById(job).style.display = 'block';
+        }
+
+        function scrollToSection(id) {
+            const section = document.getElementById(id);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+
+</html>
